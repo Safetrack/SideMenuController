@@ -312,7 +312,7 @@ open class SideMenuController: UIViewController, UIGestureRecognizerDelegate {
     
     // MARK: - Interaction -
     
-    func animate(toReveal reveal: Bool){
+    func animate(toReveal reveal: Bool, isCancelled: Bool = false) {
         
         transitionInProgress = true
         sidePanelVisible = reveal
@@ -329,7 +329,7 @@ open class SideMenuController: UIViewController, UIGestureRecognizerDelegate {
             }
             self.transitionInProgress = false
             self.centerViewController.view.isUserInteractionEnabled = !reveal
-            if updated {
+            if updated && !isCancelled {
                 let delegateMethod = reveal ? self.delegate?.sideMenuControllerDidReveal : self.delegate?.sideMenuControllerDidHide
                 delegateMethod?(self)
             }

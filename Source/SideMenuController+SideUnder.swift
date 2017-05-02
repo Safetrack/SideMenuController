@@ -168,7 +168,7 @@ extension SideMenuController {
                         // closing
                         reveal = centerFrame.minX > sideFrame.width * shouldHidePercentage
                     }
-                }else{
+                } else {
                     if leftToRight {
                         //closing
                         reveal = centerFrame.maxX < sideFrame.minX + shouldOpenPercentage * sideFrame.width
@@ -178,7 +178,7 @@ extension SideMenuController {
                     }
                 }
                 
-                animate(toReveal: reveal)
+                animate(toReveal: reveal, isCancelled: !reveal)
             }
         }
     }
