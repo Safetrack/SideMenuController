@@ -1,7 +1,7 @@
 
 <img src="https://raw.githubusercontent.com/teodorpatras/SideMenuController/master/assets/smc_logo.png" alt="SideMenuController" width=900/>
 
-![Swift3](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat")
+![Swift3](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat")
 [![Platform](https://img.shields.io/cocoapods/p/SideMenuController.svg?style=flat)](http://cocoapods.org/pods/SideMenuController)
 [![Build Status](https://travis-ci.org/teodorpatras/SideMenuController.svg)](https://travis-ci.org/teodorpatras/SideMenuController)
 [![Version](https://img.shields.io/cocoapods/v/SideMenuController.svg?style=flat)](http://cocoapods.org/pods/SideMenuController)
